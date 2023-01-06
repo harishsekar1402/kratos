@@ -1,0 +1,42 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+header{
+    background-color: rgb(33, 33, 33);
+    color: white;
+}
+.web-head{
+    padding: 20px;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.web-head img{
+    float: left;
+    height: 100px;
+    width: auto;
+    margin: 0 px;
+}
+.web-head h1{
+    margin: auto 0;
+    padding-bottom: 20px;
+}
+.media{
+    text-align: right;
+    flex-grow: 1;
+}
+.media i{
+    margin: 0 5px;
+    cursor:pointer;
+}
+.media i:hover{
+    color: rgb(255, 0, 0);
+}
+
+/* media queries*/
+
+@media  screen and (max-width : 600px){
+   
+}
