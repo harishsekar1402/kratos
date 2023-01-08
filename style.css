@@ -361,16 +361,17 @@ hr.hori{
     color: var(--var1);
 }
 .sub-con{
-    font-size: 20px;
+    font-size: 18px;
     line-height: 2.5rem;
     width: 80%;
 }
+
 .sub{
-    font-size: 20px;
+    font-size: 18px;
 
 }
 .ab-con{
-    font-size: 20px;
+    font-size: 18px;
     line-height: 2.5rem;
     width: 60%;
 }
@@ -405,6 +406,37 @@ hr.hori{
 #name{
     color: yellow;
 }
+/*--------------------------------------------------------------SUBPAGES---------------------------------------------------------------------*/
+.pay-area{
+    color: white;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.responsive{
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px 1px rgb(97, 97, 97);
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+.pay-para{
+    line-height: 2rem;
+    text-align: left;
+}
+.pay-area a{
+    width:40%;
+    font-size: 22px;
+    align-self: center;
+}
+
 /*-------------------------------------------------------------- media queries---------------------------------------------------------------*/
 @media screen and (max-width:450px){
     .con-img img{
@@ -414,6 +446,7 @@ hr.hori{
         box-shadow: 3px 3px 10px .1px  rgb(185, 185, 185);
         
     }
+    
     .carousel-text{
         font-size: 10px;
     }
@@ -433,6 +466,7 @@ hr.hori{
     .sub-con{
         width: 100%;
     }
+    
 }
 @media  screen and (max-width : 900px){
    
@@ -442,9 +476,10 @@ hr.hori{
  .con-area{
     flex-direction: column;
  }
-.news-section, aside, .news-section article,.social-links section{
+.news-section, .news-section article,.social-links section{
     flex-basis: 100%;		
 }
+ 
 }
 @media only screen and (max-width:1100px) {
     .nav{
@@ -480,4 +515,5 @@ hr.hori{
     .display{
         transform: translateX(0);
     }
+    
 }
