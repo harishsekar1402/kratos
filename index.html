@@ -7,31 +7,33 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <!--bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 
     <!--font awesome-->
     <script src="https://kit.fontawesome.com/7a83b62396.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
+        <div class="web-top">
         <div class="web-head">
             <img src="assets/logo.png" alt="">
             <h1>Daily bugle</h1>
-            <div class="media">
-                <i class="fa-brands fa-facebook fa-lg"></i>
-                <i class="fa-brands fa-instagram fa-lg"></i>
-                <i class="fa-brands fa-twitter fa-lg"></i>
-                <i class="fa-brands fa-whatsapp fa-lg"></i>
-                <i class="fa-solid fa-rss fa-lg"></i>
-            </div>
         </div>
+        <div class="media">
+            <i class="fa-brands fa-facebook fa-lg"></i>
+            <i class="fa-brands fa-twitter fa-lg"></i>
+            <i class="fa-brands fa-instagram fa-lg"></i>
+            <i class="fa-brands fa-youtube fa-lg"></i>
+            <i class="fa-brands fa-linkedin fa-lg"></i>
+            <i class="fa-solid fa-rss fa-lg"></i>
+        </div>
+    </div>
         <div class="nav">
                 <ul class="nav-links">
-                    <li><a href="#Home">HOME</a></li>
+                    <li><a href="#">HOME</a></li>
                     <li><a href="#">POLITICS</a></li>
                     <li><a href="#">SPORTS</a></li>
-                    <li><a href="#">BUSSINESS</a></li>
+                    <li><a href="#">BUSINESS</a></li>
                     <li><a href="#">CURRENT AFFAIRS</a></li>
                     <li><a href="#">MOVIES</a></li>
                     <li><a href="#">PROTEST</a></li>
@@ -43,10 +45,102 @@
                     <div class="burger"></div>
                 </div>
         </div>
+        <div class="breakingnews">
+            <span id="breakt"><h3>Breaking&nbsp;News</h3></span>
+            <marquee width="100%" direction="right" onmouseover="this.stop()" onmouseout="this.start()">
+                <div class="brow">
+                <a href="#" class="news"><p class="btime">25 Dec 2022</p>PayPal enables transfer of digital currencies to external wallets.</a>
+                <a href="#" class="news"><p class="btime">25 Dec 2022</p>Italian Parliament Approves 26% Crypto-Gains Tax in 2023 Budget.</a>
+                <a href="#" class="news"><p class="btime">25 Dec 2022</p>Microstrategy Buys More Bitcoin — Company's Crypto Holdings Grow to 132,500 BTC.</a>
+                <a href="#" class="news"><p class="btime">25 Dec 2022</p>Bitcoin Miners’ Revenue Hits $9.55 Billion in 2022.</a>
+                <a href="#" class="news"><p class="btime">25 Dec 2022</p>Mango Markets Exploiter Eisenberg Arrested in Puerto Rico.</a>
+            </div>
+                </marquee>
+        </div>
+        
     </header>
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <main>
+        <article id="popular-news">
+            <div id="featured">
+                <h2>FEATURED</h2>
+                <section class="popular-news-carousel">
+                    <div id="carousel" class="carousel slide" data-ride="carousel">
+                      <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                      </ol>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img class="d-block w-100 cimg" src="assets/img1.jpg" alt="First slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>PayPal enables transfer of digital currencies to external wallets.</h5>
+                                <p>25th Dec 2022</p>
+                             </div>
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100 cimg" src="assets/img2.png" alt="Second slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Italian Parliament Approves 26% Crypto-Gains Tax in 2023 Budget.</h5>
+                                <p>25th Dec 2022</p>
+                             </div>
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100 cimg" src="assets/img3.png" alt="Third slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Microstrategy Buys More Bitcoin — Company's Crypto Holdings Grow to 132,500 BTC.</h5>
+                                <p>25th Dec 2022</p>
+                             </div>
+                              
+                        </div>
+                      </div>
+                      <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
+                </section>
+                
+            </div>
+            <div id="latest">
+                <h2>LATEST</h2>
+                <section class="news">
+                    <div class="news-container">
+                        <img class = "bimg"src="assets/img1.jpg">
+                        <p class="carousel-text">PayPal accepts Crypto</p>				
+                    </div>						
+                </section>
+                <section class="news">
+                    <div class="news-container">
+                        <img class = "bimg" src="assets/img4.png">
+                        <p class="carousel-text">Bitcoin Miners</p>				
+                    </div>						
+                </section>
+            </div>
+            <div id="our-picks">
+                <h2>OUR PICKS</h2>
+                <section class="news">
+                    <div class="news-container">
+                        <img class = "bimg" src="assets/img5.png">
+                        <p class="carousel-text">Arrested </p>				
+                    </div>						
+                </section>
+                <section class="news">
+                    <div class="news-container">
+                        <img class = "bimg" src="assets/img3.png">
+                        <p class="carousel-text">Microstrategy Buys More Bitcoin</p>				
+                    </div>						
+                </section>
+            </div>
+        </article>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="main.js"></script>
 </body>
 </html>

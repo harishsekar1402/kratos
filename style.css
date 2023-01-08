@@ -6,6 +6,7 @@
 :root{
     --var1 : rgb(255, 44, 44);
     --var2 : white; 
+    --var3 : yellow;
 }
 html{
     scroll-behavior: smooth;
@@ -20,6 +21,10 @@ a{
 header{
     background-color: black;
     color: white;
+}
+.web-top{
+    display: flex;
+    flex-direction: column;
 }
 .web-head{
     padding: 20px;
@@ -42,20 +47,18 @@ header{
     color: var(--var1);
 }
 .media{
-    text-align: right;
-    flex-grow: 1;
+    margin-left: 40px;
 }
 .media i{
-    margin: 0 5px;
-    cursor:pointer;
+    margin: 0 10px 20px 10px;
 }
 .media i:hover{
     color: var(--var1);
 }
-
 .nav{ 
-    margin: auto;
+    margin: 20px  30px;
     display: flex;
+
     justify-content: space-between;
     position: sticky !important;
     top:0%;
@@ -94,6 +97,7 @@ header{
 }
 .nav-links a:hover{
     color:  var(--var1);
+    text-decoration: none;
 }
 .menu{
     position: relative;
@@ -105,7 +109,7 @@ header{
     align-items:center;
     justify-content:center;
     display: none;
-    margin-left: 30px;
+    margin-left: 10px;
 }
 
 .burger{
@@ -146,14 +150,147 @@ header{
     transform: rotate(-45deg) translate(35px,35px);
 }
 
+.breakingnews{
+    padding: 0 30px 0 45px;
+    display: flex;
+    text-decoration: none;
+}
+#breakt:hover{
+    text-decoration: none;
+    color: var(--var1);
+}
+.news{
+    text-decoration: none;
+    color: var(--var2);
+    text-transform: uppercase;
+    display: flex;
+    padding: 20px;
+    font-weight: 600;
+}
+.news:hover{
+    color: var(--var1);
+    font-weight: 600;
+}
+.btime{
+    padding: 0 20px;
+    color: var(--var3);
+}
+.brow{
+    padding-top: 20px;
+    display: flex;
+}
+.popular{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+    margin: 30px 5%;
+}
+.cimg{
+    height: 360px;
+    width: 100%;
+}
+.bimg{
+    height: 150px;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 2px 4px 10px 3px black;
+}
+.bimg:hover{
+    box-shadow: 2px 4px 10px 3px white;
+}
+main{
+    background-color: #000;
+}
 
+#popular-news{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0px 5%;
+    border-radius: 20px;
+    background-color: rgb(17, 17, 17);
+}
+#popular-news h2{
+	margin: 0;
+	padding: 5px;
+	color: #fff;
+
+}
+#featured h2{
+	
+    background-color: rgb(0, 149, 191);
+    color: white;
+}
+
+#latest h2{
+    color: black;
+	background-color: rgb(219, 219, 3);
+}
+#our-picks h2{
+	background-color: rgb(111, 111, 111);
+    color: #000;
+}
+#featured{
+	flex: 3;
+}
+#latest,#our-picks{
+	flex: 1;
+}
+#popular-news img{
+	width: 100%;
+	filter: brightness(0.7);
+	transition-duration: 500ms;
+}
+.carousel, .news-container{
+	position: relative;
+}
+.carousel-text{
+	position: absolute;
+	word-wrap: normal;
+	bottom: 5px;
+	z-index: 2;
+	color: #fff;
+	font-size: 24px;
+	font-weight: bolder;
+	padding: 0 10px;
+	transition-duration: 500ms;
+}
+.news-container .carousel-text{
+	font-size: 18px;
+}
+.carousel-date{
+	display: block;
+	text-align: center;
+	font-size: 14px;
+	color: rgba(255,255,255,0.7);
+	font-weight: 300;
+}
+section{
+	cursor: pointer;
+}
+.news-container:hover > .carousel-text{
+	bottom: 10px;
+}
+.news-container:hover > img{
+	filter: brightness(0.4);
+}
 
 /* media queries*/
-
-@media  screen and (max-width : 600px){
+@media screen and (max-width: 600px){
+    .breakingnews{
+        padding: 30px;
+        flex-wrap: wrap;
+    }
+}
+@media  screen and (max-width : 900px){
    .web-head h1{
     font-size: 20px;
    }
+   #featured{
+    flex: auto;
+}	
+.news-section, aside, .news-section article,.social-links section{
+    flex-basis: 100%;		
+}
 }
 @media only screen and (max-width:1300px) {
     .nav{
