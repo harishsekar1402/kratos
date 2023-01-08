@@ -384,6 +384,7 @@ hr.hori{
 #foot{
     background-color: rgb(41, 41, 41);
     margin: 0%;
+    height: 100px;
 }
 #foot p{
     height: 50px;
@@ -391,6 +392,7 @@ hr.hori{
     font-size: 20px;
     text-align: center;
     margin: 0%;
+    align-items: center;
 }
 #foot p a:hover{
     text-decoration: none;
@@ -399,6 +401,15 @@ hr.hori{
     color: yellow;
 }
 /*-------------------------------------------------------------- media queries---------------------------------------------------------------*/
+@media screen and (max-width:450px){
+    .con-img img{
+        height: 150px;
+        width: 200px;
+        border-radius: 20px;
+        box-shadow: 3px 3px 10px .1px  rgb(185, 185, 185);
+        
+    }
+}
 @media screen and (max-width: 600px){
     .breakingnews{
         padding: 30px;
