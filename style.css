@@ -7,7 +7,7 @@
 :root{
     --var1 : rgb(255, 44, 44);
     --var2 : rgb(199, 199, 199); 
-    --var3 : yellow;
+    --var3 : rgb(212, 212, 28);
 }
 html{
     scroll-behavior: smooth;
@@ -308,22 +308,23 @@ main{
 }
 .row-rev {
     flex-direction: row-reverse;
-    background-color:rgb(62, 62, 62);
+    background-color:var(--var2);
     margin: 0 30px;
     font-size: 18px;
+    color: #000;
 }
 
 .title{
     margin-top: 30px;
     margin-left: 30px;
-    color: var(--var1);
+    color: var(--var3);
     cursor: pointer ;
 }
 .title:hover{
     color: var(--var2);
 }
 .title a{
-    color: var(--var1);
+    color: var(--var3);
     text-decoration: none;
 }
 .title a:hover{
@@ -344,11 +345,17 @@ hr.hori{
     gap: 30px;
     margin: 50px 30px 0px 30px;
 }
-.ab-head:hover{
+.ab-head{
     color: var(--var1);
 }
-.sub-title:hover{
+.sub-title{
     color: var(--var1);
+}
+.ab-head:hover{
+    color: var(--var2);
+}
+.sub-title:hover{
+    color: var(--var2);
 }
 .ab-med i:hover{
     color: var(--var1);
@@ -384,15 +391,13 @@ hr.hori{
 #foot{
     background-color: rgb(41, 41, 41);
     margin: 0%;
-    height: 100px;
+    padding: 5px;
 }
 #foot p{
-    height: 50px;
     color: rgb(255, 255, 255);
     font-size: 20px;
     text-align: center;
     margin: 0%;
-    align-items: center;
 }
 #foot p a:hover{
     text-decoration: none;
@@ -409,6 +414,9 @@ hr.hori{
         box-shadow: 3px 3px 10px .1px  rgb(185, 185, 185);
         
     }
+    .carousel-text{
+        font-size: 10px;
+    }
 }
 @media screen and (max-width: 600px){
     .breakingnews{
@@ -418,6 +426,12 @@ hr.hori{
     #about{
         flex-direction: column;
         gap: 30px;
+    }
+    .ab-con{
+        width: 100%;
+    }
+    .sub-con{
+        width: 100%;
     }
 }
 @media  screen and (max-width : 900px){
