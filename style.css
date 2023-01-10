@@ -1,13 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=PT+Serif&display=swap');
 *{
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
 }
 
 :root{
     --var1 : rgb(255, 44, 44);
     --var2 : rgb(199, 199, 199); 
-    --var3 : rgb(212, 212, 28);
+    --var3 : #d4be1b;
 }
 html{
     scroll-behavior: smooth;
@@ -24,7 +26,7 @@ a{
     background: var(--var1);
   }
 header{
-    background-color: black;
+    background-color: rgb(17, 17, 17);
     color: white;
 }
 .web-top{
@@ -51,15 +53,7 @@ header{
 .web-head h1:hover{
     color: var(--var1);
 }
-.media{
-    margin-left: 40px;
-}
-.media i{
-    margin: 0 10px 20px 10px;
-}
-.media i:hover{
-    color: var(--var1);
-}
+
 .nav{ 
     margin: 20px  30px;
     display: flex;
@@ -68,8 +62,7 @@ header{
     position: sticky !important;
     top:0%;
     align-items: center;
-    background-color: rgb(0, 0, 0);
-    box-shadow: 0px 2px 5px rgba(0, 0, 1, 0.479);
+    background-color: rgb(17, 17, 17);
     z-index: 10;
 }
 
@@ -197,21 +190,21 @@ header{
 .bimg{
     height: 150px;
     width: 100%;
-    border-radius: 20px;
+    border-radius: 5px;
     box-shadow: 2px 4px 10px 3px black;
 }
 .bimg:hover{
     box-shadow: 2px 4px 10px 3px white;
 }
 main{
-    background-color: #000;
+    background-color: rgb(17, 17, 17);
 }
 
 #popular-news{
 	display: flex;
 	flex-wrap: wrap;
-	margin: 0px 5%;
-    background-color: rgb(17, 17, 17);
+	margin: 0px 3%;
+    background-color: rgb(12, 12, 12);
 }
 #popular-news h2{
 	margin: 0;
@@ -292,10 +285,11 @@ main{
     gap:2rem;
 }
 .con-img img{
-    height: 200px;
-    width: 350px;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
     border-radius: 20px;
-    box-shadow: 3px 3px 10px .1px  rgb(185, 185, 185);
+    box-shadow: 2px 2px 10px 1px rgb(97, 97, 97);
     
 }
 .row-rev .con-img img{
@@ -310,6 +304,7 @@ main{
     flex-direction: row-reverse;
     background-color:var(--var2);
     margin: 0 30px;
+    padding: 10px;
     font-size: 18px;
     color: #000;
 }
@@ -406,6 +401,11 @@ hr.hori{
 #name{
     color: yellow;
 }
+.button-1{
+    display: flex;
+    align-self: center;
+    gap: 3rem;
+}
 /*--------------------------------------------------------------SUBPAGES---------------------------------------------------------------------*/
 .pay-area{
     color: white;
@@ -425,30 +425,27 @@ hr.hori{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 100%;
   }
 .pay-para{
     line-height: 2rem;
     text-align: left;
 }
-.pay-area a{
-    width:40%;
+.button-1 a{
     font-size: 22px;
     align-self: center;
 }
 
 /*-------------------------------------------------------------- media queries---------------------------------------------------------------*/
 @media screen and (max-width:450px){
-    .con-img img{
-        height: 150px;
-        width: 200px;
-        border-radius: 20px;
-        box-shadow: 3px 3px 10px .1px  rgb(185, 185, 185);
-        
-    }
-    
     .carousel-text{
         font-size: 10px;
+    }
+    .button-1{
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        gap: 3rem;
     }
 }
 @media screen and (max-width: 600px){
